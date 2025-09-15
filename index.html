@@ -1,90 +1,80 @@
 <!-- index.html -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<div class="row">
-<div>
-<div class="label">신랑 · 신부</div>
-  .poem {
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0 0 8px 0;
-  white-space: pre-line;
-  text-align: center;
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+<title>청첩장 | 우리들의 시작</title>
+<meta name="description" content="모던한 시 톤의 모바일 청첩장 템플릿" />
+<style>
+:root{
+--bg:#0f1724; /* deep slate */
+--card:#0b1220;
+--muted:#9aa4b2;
+--accent:#f6cf9b; /* soft warm */
+--glass: rgba(255,255,255,0.04);
+--radius:16px;
+--max-width:760px;
+--text:#f7fafc;
+--gap:18px;
+font-family: Inter, 'Noto Sans KR', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
-<div class="value">황치훈 · 심영은</div>
-  .poem {
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0 0 8px 0;
-  white-space: pre-line;
-  text-align: center;
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+background:linear-gradient(180deg,var(--bg),#071025);
+color:var(--text);
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+display:flex;align-items:flex-start;justify-content:center;padding:28px 12px;
 }
-</div>
-<div>
-<div class="label">RSVP</div>
-<div class="value">참석 여부를 알려주세요</div>
-</div>
-</div>
-</div>
-
-
-<div class="actions">
-<!-- CUSTOMIZE: RSVP 링크 (Google Form or mailto) -->
-<a class="btn" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank" rel="noopener">참석/불참 작성</a>
-<a class="btn ghost" id="shareBtn" href="#">공유하기</a>
-</div>
-
-
-<div class="gallery" aria-hidden="false">
-<!-- CUSTOMIZE: 작은 사진들 -->
-<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="photo1">
-<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=800&auto=format&fit=crop" alt="photo2">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop" alt="photo3">
-</div>
-
-
-<div class="map">
-<!-- CUSTOMIZE: 카카오맵 또는 네이버 지도에서 생성한 임베드 링크로 교체하세요 -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.925..." aria-hidden="false" loading="lazy"></iframe>
-</div>
-
-
-</div>
-
-
-<footer>
-궁금한 점은 연락 주세요 · 신랑 010-1234-5678 / 신부 010-9876-5432
-</footer>
-
-
-</div>
-</div>
-
-
-<script>
-// 공유 버튼 (모바일에서 링크 복사 + 네이티브 공유 시도)
-const shareBtn = document.getElementById('shareBtn');
-shareBtn.addEventListener('click', async (e) => {
-e.preventDefault();
-const shareData = {
-title: document.title,
-text: '저희 결혼식에 초대합니다 — 자세한 정보는 링크에서 확인해주세요',
-url: location.href
-};
-try{
-if(navigator.share){
-await navigator.share(shareData);
-} else {
-await navigator.clipboard.writeText(location.href);
-alert('청첩장 링크가 복사되었습니다. 메시지에 붙여넣어 공유해 주세요.');
+.wrap{
+width:100%;max-width:var(--max-width);
 }
-}catch(err){
-// fallback
-await navigator.clipboard.writeText(location.href);
-alert('링크가 복사되었습니다. 메시지에 붙여넣어 공유해 주세요.');
+.card{
+background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+border-radius:var(--radius);
+padding:22px;
+box-shadow: 0 6px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+backdrop-filter: blur(6px);
+text-align: center; /* ✅ 전체 텍스트 가운데 정렬 */
 }
-});
-</script>
-</body>
+header{display:flex;gap:14px;align-items:center;justify-content:center;flex-direction:column}
+.avatar{width:90px;height:90px;border-radius:14px;overflow:hidden;margin-bottom:10px}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+h1{font-size:18px;margin:0 0 4px 0;letter-spacing:-0.2px}
+p.lead{margin:0;color:var(--muted);font-size:13px}
+
+
+.hero{
+margin-top:18px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
+}
+.poem{font-size:16px;line-height:1.6;margin:0 0 8px 0;white-space:pre-line}
+.meta{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.meta .row{display:flex;flex-direction:column;gap:4px;align-items:center;padding:10px;border-radius:10px;background:var(--glass);}
+.label{font-size:12px;color:var(--muted)}
+.value{font-size:14px}
+
+
+.actions{display:flex;gap:10px;margin-top:14px;justify-content:center}
+.btn{flex:1;padding:12px;border-radius:12px;text-align:center;font-weight:600;background:linear-gradient(90deg,var(--accent),#ffd9a5);color:#071025;text-decoration:none;max-width:200px}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--text);font-weight:600}
+
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+.gallery img{width:100%;height:90px;object-fit:cover;border-radius:8px}
+
+
+.map{margin-top:14px;border-radius:12px;overflow:hidden}
+.map iframe{width:100%;height:200px;border:0;display:block}
+
+
+footer{margin-top:16px;text-align:center;color:var(--muted);font-size:12px}
+
+
+@media (min-width:600px){
+.poem{font-size:18px}
+.gallery img{height:110px}
 </html>
