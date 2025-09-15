@@ -1,0 +1,76 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<div class="row">
+<div>
+<div class="label">신랑 · 신부</div>
+<div class="value">홍길동 · 김영은</div>
+</div>
+<div>
+<div class="label">RSVP</div>
+<div class="value">참석 여부를 알려주세요</div>
+</div>
+</div>
+</div>
+
+
+<div class="actions">
+<!-- CUSTOMIZE: RSVP 링크 (Google Form or mailto) -->
+<a class="btn" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank" rel="noopener">참석/불참 작성</a>
+<a class="btn ghost" id="shareBtn" href="#">공유하기</a>
+</div>
+
+
+<div class="gallery" aria-hidden="false">
+<!-- CUSTOMIZE: 작은 사진들 -->
+<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="photo1">
+<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=800&auto=format&fit=crop" alt="photo2">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop" alt="photo3">
+</div>
+
+
+<div class="map">
+<!-- CUSTOMIZE: 카카오맵 또는 네이버 지도에서 생성한 임베드 링크로 교체하세요 -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.925..." aria-hidden="false" loading="lazy"></iframe>
+</div>
+
+
+</div>
+
+
+<footer>
+궁금한 점은 연락 주세요 · 신랑 010-1234-5678 / 신부 010-9876-5432
+</footer>
+
+
+</div>
+</div>
+
+
+<script>
+// 공유 버튼 (모바일에서 링크 복사 + 네이티브 공유 시도)
+const shareBtn = document.getElementById('shareBtn');
+shareBtn.addEventListener('click', async (e) => {
+e.preventDefault();
+const shareData = {
+title: document.title,
+text: '저희 결혼식에 초대합니다 — 자세한 정보는 링크에서 확인해주세요',
+url: location.href
+};
+try{
+if(navigator.share){
+await navigator.share(shareData);
+} else {
+await navigator.clipboard.writeText(location.href);
+alert('청첩장 링크가 복사되었습니다. 메시지에 붙여넣어 공유해 주세요.');
+}
+}catch(err){
+// fallback
+await navigator.clipboard.writeText(location.href);
+alert('링크가 복사되었습니다. 메시지에 붙여넣어 공유해 주세요.');
+}
+});
+</script>
+</body>
+</html>
