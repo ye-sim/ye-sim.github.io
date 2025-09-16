@@ -1,0 +1,407 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v512_295 {
+  width: 1000px;
+  height: 1500px;
+  background: rgba(95,77,61,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v512_296 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/v512_296.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 1039px;
+  overflow: hidden;
+}
+.v512_297 {
+  width: 802px;
+  height: 864px;
+  background: url("../images/v512_297.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 446px;
+  left: 99px;
+  overflow: hidden;
+}
+.v512_298 {
+  width: 155px;
+  height: 135px;
+  background: url("../images/v512_298.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 306px;
+  left: 225px;
+  overflow: hidden;
+}
+.v512_299 {
+  width: 103px;
+  height: 135px;
+  background: url("../images/v512_299.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 330px;
+  left: 357px;
+  overflow: hidden;
+}
+.v512_300 {
+  width: 133px;
+  height: 156px;
+  background: url("../images/v512_300.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 297px;
+  left: 455px;
+  overflow: hidden;
+}
+.v512_301 {
+  width: 100px;
+  height: 154px;
+  background: url("../images/v512_301.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 297px;
+  left: 569px;
+  overflow: hidden;
+}
+.v512_302 {
+  width: 152px;
+  height: 149px;
+  background: url("../images/v512_302.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 301px;
+  left: 715px;
+  overflow: hidden;
+}
+.v512_303 {
+  width: 70px;
+  height: 158px;
+  background: url("../images/v512_303.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 297px;
+  left: 656px;
+  overflow: hidden;
+}
+.v512_304 {
+  width: 110px;
+  height: 126px;
+  background: url("../images/v512_304.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 297px;
+  left: 846px;
+  overflow: hidden;
+}
+.v512_305 {
+  width: 103px;
+  height: 217px;
+  background: url("../images/v512_305.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 52px;
+  left: 57px;
+  overflow: hidden;
+}
+.v512_306 {
+  width: 83px;
+  height: 202px;
+  background: url("../images/v512_306.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 76px;
+  left: 390px;
+  overflow: hidden;
+}
+.v512_307 {
+  width: 122px;
+  height: 187px;
+  background: url("../images/v512_307.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 80px;
+  left: 286px;
+  overflow: hidden;
+}
+.v512_308 {
+  width: 100px;
+  color: rgba(255,77,243,1);
+  position: absolute;
+  top: 523px;
+  left: 60px;
+  font-family: Happy Time Doodles;
+  font-weight: Regular;
+  font-size: 100px;
+  opacity: 1;
+  text-align: center;
+  transform: rotate(-30deg);
+}
+.v512_309 {
+  width: 99px;
+  color: rgba(0,80,167,1);
+  position: absolute;
+  top: 471px;
+  left: 266px;
+  font-family: Refresh bonus;
+  font-weight: Regular;
+  font-size: 200px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_310 {
+  width: 66px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 659px;
+  left: 175px;
+  font-family: Happy Time Doodles;
+  font-weight: Regular;
+  font-size: 100px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_311 {
+  width: 83px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 488px;
+  left: 670px;
+  font-family: Happy Time Doodles;
+  font-weight: Regular;
+  font-size: 150px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_312 {
+  width: 805px;
+  height: 633px;
+  background: url("../images/v512_312.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 324px;
+  left: 109px;
+  overflow: hidden;
+}
+.v512_313 {
+  width: 187px;
+  color: rgba(134,0,0,1);
+  position: absolute;
+  top: 0px;
+  left: 618px;
+  font-family: MTF Doodlewhats;
+  font-weight: Regular;
+  font-size: 200px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_314 {
+  width: 168px;
+  color: rgba(134,0,0,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: MTF Doodlewhats;
+  font-weight: Regular;
+  font-size: 200px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_315 {
+  width: 79px;
+  color: rgba(0,174,255,1);
+  position: absolute;
+  top: 1011px;
+  left: 680px;
+  font-family: Fairy Code;
+  font-weight: Regular;
+  font-size: 90px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_316 {
+  width: 232px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 1316px;
+  left: 241px;
+  font-family: Holidays Homework;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_317 {
+  width: 188px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 1316px;
+  left: 527px;
+  font-family: Holidays Homework;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_318 {
+  width: 60px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 528px;
+  left: 502px;
+  font-family: Fairy Code;
+  font-weight: Regular;
+  font-size: 90px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_319 {
+  width: 145px;
+  color: rgba(255,136,0,1);
+  position: absolute;
+  top: 639px;
+  left: 811px;
+  font-family: VBdings;
+  font-weight: Medium;
+  font-size: 140px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_320 {
+  width: 127px;
+  color: rgba(24,163,0,1);
+  position: absolute;
+  top: 1094px;
+  left: 728px;
+  font-family: Refresh bonus;
+  font-weight: Regular;
+  font-size: 170px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_321 {
+  width: 255px;
+  color: rgba(0,80,167,1);
+  position: absolute;
+  top: 1094px;
+  left: 77px;
+  font-family: Happy Time Doodles;
+  font-weight: Regular;
+  font-size: 170px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_322 {
+  width: 640px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 1425px;
+  left: 201px;
+  font-family: Holidays Homework;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+}
+.v512_323 {
+  width: 152px;
+  height: 174px;
+  background: url("../images/v512_323.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  overflow: hidden;
+}
+.v512_324 {
+  width: 98px;
+  height: 169px;
+  background: url("../images/v512_324.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 85px;
+  left: 460px;
+  overflow: hidden;
+}
+.v512_325 {
+  width: 197px;
+  height: 151px;
+  background: url("../images/v512_325.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 112px;
+  left: 545px;
+  transform: rotate(-8deg);
+  overflow: hidden;
+}
+.v512_326 {
+  width: 197px;
+  height: 221px;
+  background: url("../images/v512_326.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 66px;
+  left: 680px;
+  overflow: hidden;
+}
