@@ -1,80 +1,95 @@
 <!-- index.html -->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
-<title>청첩장 | 우리들의 시작</title>
-<meta name="description" content="모던한 시 톤의 모바일 청첩장 템플릿" />
-<style>
-:root{
---bg:#fffff; /* deep slate */
---card:#0b1220;
---muted:#9aa4b2;
---accent:#f6cf9b; /* soft warm */
---glass: rgba(255,255,255,0.04);
---radius:16px;
---max-width:760px;
---text:#f7fafc;
---gap:18px;
-font-family: Inter, 'Noto Sans KR', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-margin:0;
-background:linear-gradient(180deg,var(--bg),#071025);
-color:var(--text);
--webkit-font-smoothing:antialiased;
--moz-osx-font-smoothing:grayscale;
-display:flex;align-items:flex-start;justify-content:center;padding:28px 12px;
-}
-.wrap{
-width:100%;max-width:var(--max-width);
-}
-.card{
-background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-border-radius:var(--radius);
-padding:22px;
-box-shadow: 0 6px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
-backdrop-filter: blur(6px);
-text-align: center; /* ✅ 전체 텍스트 가운데 정렬 */
-}
-header{display:flex;gap:14px;align-items:center;justify-content:center;flex-direction:column}
-.avatar{width:90px;height:90px;border-radius:14px;overflow:hidden;margin-bottom:10px}
-.avatar img{width:100%;height:100%;object-fit:cover;display:block}
-h1{font-size:18px;margin:0 0 4px 0;letter-spacing:-0.2px}
-p.lead{margin:0;color:var(--muted);font-size:13px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>황치훈 💍 심영은 청첩장</title>
+  <style>
+    body {
+      background: #ffffff; /* ✅ 흰색 배경 */
+      color: #333;         /* ✅ 글씨는 진한 회색 */
+      font-family: 'Pretendard', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center; /* ✅ 전체 텍스트 가운데 정렬 */
+    }
+    .wrap {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    .poem {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+    .row {
+      margin: 12px 0;
+    }
+    .label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 4px;
+      color: #666;
+    }
+    .value {
+      font-size: 16px;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>황치훈 💍 심영은</h1>
+      <div class="poem">
+        함께 웃고,  
+        함께 울며,  
+        같은 꿈을 꾸기로 했습니다.
+      </div>
 
+      <div class="row">
+        <div class="label">일시</div>
+        <div class="value">2025년 10월 18일 토요일 오후 2시</div>
+      </div>
 
-.hero{
-margin-top:18px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
-}
-.poem{font-size:16px;line-height:1.6;margin:0 0 8px 0;white-space:pre-line}
-.meta{display:flex;flex-direction:column;gap:10px;margin-top:10px}
-.meta .row{display:flex;flex-direction:column;gap:4px;align-items:center;padding:10px;border-radius:10px;background:var(--glass);}
-.label{font-size:12px;color:var(--muted)}
-.value{font-size:14px}
+      <div class="row">
+        <div class="label">장소</div>
+        <div class="value">서울 ○○웨딩홀 3층 그랜드홀</div>
+      </div>
 
+      <div class="row">
+        <div class="label">신랑 · 신부</div>
+        <div class="value">황치훈 · 심영은</div>
+      </div>
 
-.actions{display:flex;gap:10px;margin-top:14px;justify-content:center}
-.btn{flex:1;padding:12px;border-radius:12px;text-align:center;font-weight:600;background:linear-gradient(90deg,var(--accent),#ffd9a5);color:#071025;text-decoration:none;max-width:200px}
-.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--text);font-weight:600}
+      <div class="row">
+        <div class="label">RSVP</div>
+        <div class="value"><a href="#">참석 여부 알려주기</a></div>
+      </div>
+    </div>
 
-
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
-.gallery img{width:100%;height:90px;object-fit:cover;border-radius:8px}
-
-
-.map{margin-top:14px;border-radius:12px;overflow:hidden}
-.map iframe{width:100%;height:200px;border:0;display:block}
-
-
-footer{margin-top:16px;text-align:center;color:var(--muted);font-size:12px}
-
-
-@media (min-width:600px){
-.poem{font-size:18px}
-.gallery img{height:110px}
+    <div class="footer">
+      두 사람의 시작을 축복해 주시면 감사하겠습니다.
+    </div>
+  </div>
+</body>
 </html>
